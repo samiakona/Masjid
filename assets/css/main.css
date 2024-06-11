@@ -1568,6 +1568,67 @@ section {
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
+.table td, .table th {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+.text-center {
+  text-align: center !important;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.td {
+  display: table-cell;
+  vertical-align: inherit;
+  unicode-bidi: isolate;
+}
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+.table {
+  border-collapse: collapse;
+}
+.table {
+  border-collapse: separate;
+  text-indent: initial;
+  border-spacing: 2px;
+}
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
+}
+.card-header:first-child {
+  border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+.text-white {
+  color: #fff !important;
+}
+.text-center {
+  text-align: center !important;
+}
+.bg-secondary {
+  background-color: #2e545f !important;
+}
+.card-header {
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, .03);
+  border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
 .service-details .services-list {
   padding: 10px 30px;
   border: 1px solid #d5d7da;
