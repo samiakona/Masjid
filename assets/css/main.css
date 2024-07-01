@@ -1568,6 +1568,13 @@ section {
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
+
+@media (max-width: 600px) {
+  .table th, .table td{
+    padding: 0px;
+  }
+  
+}
 .table td, .table th {
   padding: .75rem;
   vertical-align: top;
@@ -1596,9 +1603,18 @@ section {
 .table {
   border-collapse: separate;
   text-indent: initial;
-  border-spacing: 2px;
+  /* border-spacing: 1px; */
+}
+.table th, td{
+  width:400px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid black;
+  border-collapse: collapse;
 }
 .card {
+  padding: 400;
   position: relative;
   display: -ms-flexbox;
   display: flex;

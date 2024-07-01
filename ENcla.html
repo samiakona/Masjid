@@ -10,8 +10,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/nabawi-mosque.png" rel="icon">
-    <link href="assets/img/nabawi-mosque.png" rel="apple-touch-icon">
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,13 +28,18 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- Template Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
 
+
+    <link rel="stylesheet" href="assets/css/evo-calendar.min.css">
+    <link rel="stylesheet" href="assets/css/evo-calendar.midnight-blue.min.css">
+
     <!-- =======================================================
-  * Project Name: Masjid-E-Baitul Mamur
-  * Updated: April 05 2024 with Bootstrap v5.3.3
-  * Author: Md Kamrul Hasan
+  * Template Name: UpConstruction
+  * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
 
@@ -68,7 +73,7 @@
                             <li><a href="staff.html">Staff</a></li>
                         </ul>
                     </li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="services.html">Calendar</a></li>
                     <li><a href="projects.html">Gallery</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li class="dropdown"><a href="#"><span>Event</span> <i
@@ -83,124 +88,170 @@
             </nav><!-- .navbar -->
 
         </div>
-    </header><!-- End Header -->
-
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="hero">
-
-        <div class="info d-flex align-items-center">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 text-center">
-                        <h2 data-aos="fade-down">Welcome to <span>Masjid-E-Baitul</span></h2>
-                        <p data-aos="fade-up">As-salamu alaykum, Masjid-e-Baitul is a very popular
-                            mosque located in the center of Mirpur-10, the central point of Dhaka city.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-
-            <div class="carousel-item active" style="background-image: url(assets/img/makka.jpeg)"></div>
-            <div class="carousel-item" style="background-image: url(assets/img/makka1.jpg)"></div>
-            <div class="carousel-item" style="background-image: url(assets/img/madina.jpg)"></div>
-            <div class="carousel-item" style="background-image: url(assets/img/al-aqsa.jpg)"></div>
-
-            <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-            </a>
-
-            <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-            </a>
-
-        </div>
-
-    </section><!-- End Hero Section -->
+    </header>
 
     <main id="main">
 
+        <!-- ======= Breadcrumbs ======= -->
+        <div class="breadcrumbs d-flex align-items-center"
+            style="background-image: url('assets/img/breadcrumbs-bg.jpg');">
+            <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
-    </main><!-- End #main -->
+                <h2>ENGLISH CALENDER</h2>
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li>English Calender</li>
+                </ol>
 
-    <!-- ======= Footer ======= -->
-    <footer id="footer" class="footer">
+            </div>
+        </div><!-- End Breadcrumbs -->
 
-        <div class="footer-content position-relative">
-            <div class="container">
-                <div class="row">
+        <br>
+        <!-- ======= Hero Section ======= -->
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="footer-info">
-                            <h3>Masjid-E-Baitul Mamur</h3>
-                            <p>
-                                Section-06, Block-kha, Road-01,<br>
-                                Plot-21/1,22/1,22/2, Senpara Parbata, <br>
-                                Mirpur, Dhaka, Bangladesh<br><br>
-                                <strong>Phone:</strong> +1 5589 55488 55<br>
-                                <strong>Email:</strong> masjidebaitulmamur@gmail.com<br>
-                            </p>
-                        </div>
-                    </div><!-- End footer info column-->
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
 
-                    <div class="col-lg-2 col-md-3 footer-links">
+            .hero {
+                width: 80%;
+                height: 80%;
+                position: relative;
+            }
 
-                    </div><!-- End footer links column-->
+            .calender {
+                width: 80%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin-left: 10px;
+            }
+        </style>
 
-                    <div class="col-lg-2 col-md-3 footer-links">
+        <main id="main">
+            <div class="hero">
 
-                    </div><!-- End footer links column-->
+            </div>
+            <div id="calendar"></div>
 
-                    <div class="col-lg-2 col-md-3 footer-links">
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 
-                    </div><!-- End footer links column-->
+            <script src="assets/js/evo-calendar.min.js">
 
-                    <div class="col-lg-2 col-md-3 footer-links">
-                        <h4>Useful Links</h4>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="event.html">Event</a></li>
-                            <li><a href="notice.html">Notice</a></li>
-                        </ul>
-                    </div><!-- End footer links column-->
+            </script>
 
+            <script>
+                $(document).ready(function () {
+                    $('#calendar').evoCalendar({
+                        theme: "Midnight Blue",
+                        calendarEvents: [
+                            {
+                                id: 'bHay68s', // Event's ID (required)
+                                name: "New Year", // Event name (required)
+                                date: "January/1/2020", // Event date (required)
+                                description: "New Year",
+                                type: "holiday", // Event type (required)
+                                everyYear: true // Same event every year (optional)
+                            },
+                            {
+                                name: "Vacation Leave",
+                                badge: "02/13 - 02/15", // Event badge (optional)
+                                date: ["February/13/2020", "February/15/2020"], // Date range
+                                description: "Vacation leave for 3 days.", // Event description (optional)
+                                type: "event",
+                                color: "#63d867" // Event custom color (optional)
+                            }
+                        ]
+
+                    })
+                })
+
+            </script>
+
+
+        </main><!-- End #main -->
+
+        <br>
+        <!-- ======= Footer ======= -->
+        <footer id="footer" class="footer">
+
+            <div class="footer-content position-relative">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footer-info">
+                                <h3>Masjid-E-Baitul Mamur</h3>
+                                <p>
+                                    Section-06, Block-kha, Road-01,<br>
+                                    Plot-21/1,22/1,22/2, Senpara Parbata, <br>
+                                    Mirpur, Dhaka, Bangladesh<br><br>
+                                    <strong>Phone:</strong> +1 5589 55488 55<br>
+                                    <strong>Email:</strong> masjidebaitulmamur@gmail.com<br>
+                                </p>
+                            </div>
+                        </div><!-- End footer info column-->
+
+                        <div class="col-lg-2 col-md-3 footer-links">
+
+                        </div><!-- End footer links column-->
+
+                        <div class="col-lg-2 col-md-3 footer-links">
+
+                        </div><!-- End footer links column-->
+
+                        <div class="col-lg-2 col-md-3 footer-links">
+
+                        </div><!-- End footer links column-->
+
+                        <div class="col-lg-2 col-md-3 footer-links">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="event.html">Event</a></li>
+                                <li><a href="notice.html">Notice</a></li>
+                            </ul>
+                        </div><!-- End footer links column-->
+
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="footer-legal text-center position-relative">
-            <div class="container">
-                <div class="copyright">
-                    &copy; Copyright <strong><span>Masjid-E-Baitul Mamur</span></strong>. All Rights Reserved
-                </div>
-                <div class="credits">
-                    Designed by Servant of Allah<a href="#"></a>
+            <div class="footer-legal text-center position-relative">
+                <div class="container">
+                    <div class="copyright">
+                        &copy; Copyright <strong><span>Masjid-E-Baitul Mamur</span></strong>. All Rights Reserved
+                    </div>
+                    <div class="credits">
+                        Designed by Servant of Allah<a href="#"></a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </footer>
-    <!-- End Footer -->
+        </footer>
+        <!-- End Footer -->
 
-    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+        <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+                class="bi bi-arrow-up-short"></i></a>
 
-    <div id="preloader"></div>
+        <div id="preloader"></div>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+        <!-- Vendor JS Files -->
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/aos/aos.js"></script>
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
 
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+        <!-- Template Main JS File -->
+        <script src="assets/js/main.js"></script>
 
 </body>
 
